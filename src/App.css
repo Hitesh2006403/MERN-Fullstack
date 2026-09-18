@@ -316,3 +316,16 @@ body {
   letter-spacing: -0.03em;
   text-transform: capitalize;
 }
+@media (max-width: 760px) {
+  .navbar{
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.nav-links{
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.hero{
+  padding: 72px 24px;
+}
