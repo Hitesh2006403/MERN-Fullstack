@@ -30,10 +30,6 @@ function App(){
       <EventSection />
       <section className="welcome-card">
         <p className="day-label">React Day 3</p>
-        <h1 className="title">College Course Explorer </h1>
-        <p>Trainer:Nirmal</p>
-        <p>React Learning Project</p>
-        <p>Used React,JSX,componets,CSS</p>
       </section>
     </main>
   );
