@@ -300,3 +300,10 @@ body {
     padding: 72px 24px 88px;
   }
 }
+.footer {
+  padding: 32px clamp(24px, 7vw, 104px);
+  color: var(--paper-bright);
+  background: var(--ink);
+  border-top: 3px solid var(--coral);
+  align-items: center;
+} 
