@@ -19,16 +19,21 @@
 // export default App;
 
 import "./App.css";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar/Hero";
 function App(){
   return(
-    <div>
+    <main className="app">
       <Navbar />
-      <main id = "home">
-        <h1>College Course Explorer</h1>
+      <Hero />
+      <section className="welcome-card">
+        <p className="day-label">React Day 3</p>
+        <h1 className="title">College Course Explorer </h1>
+        <p>Trainer:Nirmal</p>
         <p>React Learning Project</p>
-      </main>
-    </div>
+        <p>Used React,JSX,componets,CSS</p>
+      </section>
+    </main> 
+   
   );
 }
 export default App;
