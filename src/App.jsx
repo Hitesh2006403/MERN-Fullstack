@@ -21,11 +21,13 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
+import EventSection from "./Components/Eventsection";
 function App(){
   return(
     <main className="app">
       <Navbar />
       <Hero />
+      <EventSection />
       <section className="welcome-card">
         <p className="day-label">React Day 3</p>
         <h1 className="title">College Course Explorer </h1>
