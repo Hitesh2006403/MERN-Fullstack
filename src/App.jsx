@@ -23,6 +23,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import EventSection from "./Components/Eventsection";
 import Footer from "./Components/footer";
+import EventCard from "./Components/EventCard";
 function App(){
   return(
     <main className="app">
@@ -30,6 +31,7 @@ function App(){
       <Hero />
       <EventSection />
       <Footer />
+      <EventCard/>
       <section className="welcome-card">
       </section>
     </main>
