@@ -29,7 +29,6 @@ function App(){
       <Hero />
       <EventSection />
       <section className="welcome-card">
-        <p className="day-label">React Day 3</p>
       </section>
     </main>
   );
