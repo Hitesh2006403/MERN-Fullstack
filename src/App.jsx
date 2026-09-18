@@ -33,8 +33,7 @@ function App(){
         <p>React Learning Project</p>
         <p>Used React,JSX,componets,CSS</p>
       </section>
-    </main> 
-   
+    </main>
   );
 }
-export default App;
+export default App; 
