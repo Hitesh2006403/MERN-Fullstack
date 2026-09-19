@@ -75,35 +75,44 @@ import EventCard from "./EventCard";
 // }
 
 // export default EventSection;
-import EventCard from "./EventCard";
-function EventSection(){
+
+function EventSection() {
+  const events = [
+    {
+      date: "12 Aug",
+      title: "Soft Skills Workshop",
+      desc: "Improve communication, confidence, and presentation skills.",
+    },
+    {
+      date: "18 Aug",
+      title: "Resume Review",
+      desc: "Get expert feedback on your resume and profile strategy.",
+    },
+    {
+      date: "25 Aug",
+      title: "Mock Interview Drive",
+      desc: "Practice interviews with real recruiters and feedback sessions.",
+    },
+  ];
+
   return (
-    <section id = "events" className="event-section">
-      <p className="section-label"></p>
-      <h2> Explore the campus Activitie </h2>
-      <div className="event-grid"></div>
-      <EventCard
-      category="Technology"
-      title="Mern Stack Workshop"
-      discription="Learn the basics of mangodb "
-      date=" 18 September 2026"
-      time="09:30:23"
-      />
-      <EventCard
-      category="Technology"
-      title="FULL Stack Workshop"
-      discription="Learn the basics of HTML "
-      date=" 23September 2026"
-      time="10:30:23"
-      />
-      <EventCard
-      category="Sports"
-      title="Kabbadi Cricket "
-      discription="Play and win the prize of 100000 rupee"
-      date=" 28 September 2026"
-      time="11:30:23"
-      />
+    <section className="section">
+      <div className="section-header">
+        <h2>Upcoming Events</h2>
+        <p>Opportunities that sharpen your career readiness.</p>
+      </div>
+
+      <div className="event-grid">
+        {events.map((event) => (
+          <article className="event-card" key={event.title}>
+            <div className="date">{event.date}</div>
+            <h3>{event.title}</h3>
+            <p>{event.desc}</p>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }
+
 export default EventSection;
