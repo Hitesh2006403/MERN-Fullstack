@@ -157,5 +157,4 @@ function EventForm({ onAddEvent }) {
     </section>
   );
 }
-
 export default EventForm;

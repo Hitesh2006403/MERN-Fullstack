@@ -1,15 +1,18 @@
-import EventForm from "../components/EventForm";
-import EventSection from "../components/EventSection";
-import Hero from "../components/Hero";
+import EventForm from "../Components/EventForm";
+import EventSection from "../Components/EventSection";
+import Hero from "../Components/Hero";
 
-function HomePage({events,onAddEvent}){
-    return(
-        <>
-        <Hero title="Discover what is happening in Campus"
-        description="Find workshops,sports,activities,club Meeting,and opportunities to connect with other students."/>
-        <EventForm onAddEvent={onAddEvent}/>
-        <EventSection events={events}/>
-        </>
+function Homepage({ events, onAddEvent }) {
+    return (
+        <div>
+            <Hero
+              title="Discover What Is Happening on Campus"
+              description="Find workshops, sports activities, club meetings, and opportunities to connect with other students."
+            />
+            <EventForm onAddEvent={onAddEvent} />
+            <EventSection events={events} />
+        </div>
     );
 }
-export default HomePage;
+
+export default Homepage;
