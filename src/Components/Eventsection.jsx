@@ -75,8 +75,7 @@ import EventCard from "./EventCard";
 // }
 
 // export default EventSection;
-
-
+import EventCard from "./EventCard";
 function EventSection(){
   return (
     <section id = "events" className="event-section">
