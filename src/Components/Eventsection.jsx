@@ -1,74 +1,201 @@
+// // function EventSection() {
+// //   return (
+// //     <section id="events" className="events-section">
+// //       <p className="section-label">Upcoming Activities</p>
+
+// import EventCard from "./EventCard";
+
+// //       <h2>Explore Campus Events</h2>
+
+// //       <div className="event-grid">
+// //         <article className="event-card">
+// //           <p className="event-category">Technology</p>
+
+// //           <h3>MERN Stack Workshop</h3>
+
+// //           <p>
+// //             Learn the basics of MongoDB, Express, React, and Node.js through a
+// //             practical workshop.
+// //           </p>
+
+// //           <p>
+// //             <strong>Date:</strong> 25 September 2026
+// //           </p>
+
+// //           <p>
+// //             <strong>Location:</strong> Computer Lab 1
+// //           </p>
+
+// //           <button type="button">View Details</button>
+// //         </article>
+
+// //         <article className="event-card">
+// //           <p className="event-category">Technology</p>
+
+// //           <h3>College Hackathon</h3>
+
+// //           <p>
+// //             Form a team, solve a real problem, and present your solution to
+// //             mentors.
+// //           </p>
+
+// //           <p>
+// //             <strong>Date:</strong> 28 September 2026
+// //           </p>
+
+// //           <p>
+// //             <strong>Location:</strong> Main Auditorium
+// //           </p>
+
+// //           <button type="button">View Details</button>
+// //         </article>
+
+// //         <article className="event-card">
+// //           <p className="event-category">Sports</p>
+
+// //           <h3>Campus Football Trials</h3>
+
+// //           <p>
+// //             Join football team selection trials. Bring your college ID card.
+// //           </p>
+
+// //           <p>
+// //             <strong>Date:</strong> 2 October 2026
+// //           </p>
+
+// //           <p>
+// //             <strong>Location:</strong> College Ground
+// //           </p>
+
+// //           <button type="button">View Details</button>
+// //         </article>
+// //       </div>
+// //     </section>
+// //   );
+// // }
+
+// // export default EventSection;
+
+// // function EventSection() {
+// //   return (
+// //     <section id="events" className="events-section">
+// //       <p className="section-label">Upcoming Activities</p>
+
+// //       <h2>Explore Campus Events</h2>
+
+// //       <div className="event-grid">
+// //         <article className="event-card">
+// //           <p className="event-category">Technology</p>
+
+// //           <h3>MERN Stack Workshop</h3>
+
+// //           <p>
+// //             Learn the basics of MongoDB, Express, React, and Node.js through a
+// //             practical workshop.
+// //           </p>
+
+// //           <p>
+// //             <strong>Date:</strong> 25 September 2026
+// //           </p>
+
+// //           <p>
+// //             <strong>Location:</strong> Computer Lab 1
+// //           </p>
+
+// //           <button type="button">View Details</button>
+// //         </article>
+
+// //         <article className="event-card">
+// //           <p className="event-category">Technology</p>
+
+// //           <h3>College Hackathon</h3>
+
+// //           <p>
+// //             Form a team, solve a real problem, and present your solution to
+// //             mentors.
+// //           </p>
+
+// //           <p>
+// //             <strong>Date:</strong> 28 September 2026
+// //           </p>
+
+// //           <p>
+// //             <strong>Location:</strong> Main Auditorium
+// //           </p>
+
+// //           <button type="button">View Details</button>
+// //         </article>
+
+// //         <article className="event-card">
+// //           <p className="event-category">Sports</p>
+
+// //           <h3>Campus Football Trials</h3>
+
+// //           <p>
+// //             Join football team selection trials. Bring your college ID card.
+// //           </p>
+
+// //           <p>
+// //             <strong>Date:</strong> 2 October 2026
+// //           </p>
+
+// //           <p>
+// //             <strong>Location:</strong> College Ground
+// //           </p>
+
+// //           <button type="button">View Details</button>
+// //         </article>
+// //       </div>
+// //     </section>
+// //   );
+// // }
+
+// // export default EventSection;
+// import EventCard from "./EventCard";
+
 // function EventSection() {
 //   return (
 //     <section id="events" className="events-section">
 //       <p className="section-label">Upcoming Activities</p>
 
-import EventCard from "./EventCard";
-
 //       <h2>Explore Campus Events</h2>
 
 //       <div className="event-grid">
-//         <article className="event-card">
-//           <p className="event-category">Technology</p>
+//         <EventCard
+//           title="MERN Stack Workshop"
+//           category="Technology"
+//           date="25 September 2026"
+//           time="10:00 AM"
+//           location="Computer Lab 1"
+//           description="Learn the basics of MongoDB, Express, React, and Node.js through a practical workshop."
+//         />
 
-//           <h3>MERN Stack Workshop</h3>
+//         <EventCard
+//           title="College Hackathon"
+//           category="Technology"
+//           date="28 September 2026"
+//           time="9:00 AM"
+//           location="Main Auditorium"
+//           description="Form a team, solve a real problem, and present your solution to mentors."
+//         />
 
-//           <p>
-//             Learn the basics of MongoDB, Express, React, and Node.js through a
-//             practical workshop.
-//           </p>
+//         <EventCard
+//           title="Photography Club Meet"
+//           category="Club"
+//           date="30 September 2026"
+//           time="2:00 PM"
+//           location="Seminar Hall"
+//           description="Meet fellow photography enthusiasts and learn basic composition techniques."
+//         />
 
-//           <p>
-//             <strong>Date:</strong> 25 September 2026
-//           </p>
-
-//           <p>
-//             <strong>Location:</strong> Computer Lab 1
-//           </p>
-
-//           <button type="button">View Details</button>
-//         </article>
-
-//         <article className="event-card">
-//           <p className="event-category">Technology</p>
-
-//           <h3>College Hackathon</h3>
-
-//           <p>
-//             Form a team, solve a real problem, and present your solution to
-//             mentors.
-//           </p>
-
-//           <p>
-//             <strong>Date:</strong> 28 September 2026
-//           </p>
-
-//           <p>
-//             <strong>Location:</strong> Main Auditorium
-//           </p>
-
-//           <button type="button">View Details</button>
-//         </article>
-
-//         <article className="event-card">
-//           <p className="event-category">Sports</p>
-
-//           <h3>Campus Football Trials</h3>
-
-//           <p>
-//             Join football team selection trials. Bring your college ID card.
-//           </p>
-
-//           <p>
-//             <strong>Date:</strong> 2 October 2026
-//           </p>
-
-//           <p>
-//             <strong>Location:</strong> College Ground
-//           </p>
-
-//           <button type="button">View Details</button>
-//         </article>
+//         <EventCard
+//           title="Campus Football Trials"
+//           category="Sports"
+//           date="2 October 2026"
+//           time="4:00 PM"
+//           location="College Ground"
+//           description="Join football team selection trials and bring your college ID card."
+//         />
 //       </div>
 //     </section>
 //   );
@@ -76,41 +203,40 @@ import EventCard from "./EventCard";
 
 // export default EventSection;
 
-function EventSection() {
-  const events = [
-    {
-      date: "12 Aug",
-      title: "Soft Skills Workshop",
-      desc: "Improve communication, confidence, and presentation skills.",
-    },
-    {
-      date: "18 Aug",
-      title: "Resume Review",
-      desc: "Get expert feedback on your resume and profile strategy.",
-    },
-    {
-      date: "25 Aug",
-      title: "Mock Interview Drive",
-      desc: "Practice interviews with real recruiters and feedback sessions.",
-    },
-  ];
+import EventCard from "./EventCard";
 
+function EventSection({ events }) {
   return (
-    <section className="section">
-      <div className="section-header">
-        <h2>Upcoming Events</h2>
-        <p>Opportunities that sharpen your career readiness.</p>
+    <section id="events" className="events-section">
+      <div className="section-heading">
+        <div>
+          <p className="section-label">Upcoming Activities</p>
+
+          <h2>Explore Campus Events</h2>
+        </div>
+
+        <p>{events.length} events available</p>
       </div>
 
-      <div className="event-grid">
-        {events.map((event) => (
-          <article className="event-card" key={event.title}>
-            <div className="date">{event.date}</div>
-            <h3>{event.title}</h3>
-            <p>{event.desc}</p>
-          </article>
-        ))}
-      </div>
+      {events.length === 0 ? (
+        <p>No events are available right now.</p>
+      ) : (
+        <div className="event-grid">
+          {events.map(function (event) {
+            return (
+              <EventCard
+                key={event.id}
+                title={event.title}
+                category={event.category}
+                date={event.date}
+                time={event.time}
+                location={event.location}
+                description={event.description}
+              />
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 }

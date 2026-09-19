@@ -301,10 +301,10 @@ body {
   }
 }
 .footer {
-  padding: 32px clamp(24px, 7vw, 104px);
+  padding: 20px clamp(20px, 6vw, 102px);
   color: var(--paper-bright);
   background: var(--ink);
-  border-top: 3px solid var(--coral);
+  border-top: 1px solid var(--coral);
   align-items: center;
 } 
 .footer h2 {
