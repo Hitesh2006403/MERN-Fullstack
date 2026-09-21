@@ -1,5 +1,5 @@
 import EventForm from "../Components/EventForm";
-import EventSection from "../Components/EventSection";
+import EventSection from "../Components/Eventsection";
 import Hero from "../Components/Hero";
 
 function Homepage({ events, onAddEvent }) {

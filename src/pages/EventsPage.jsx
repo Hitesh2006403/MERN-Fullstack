@@ -1,4 +1,4 @@
-import EventSection from "../components/EventSection";
+import EventSection from "../Components/Eventsection";
 
 function EventsPage({events}){
     return(
