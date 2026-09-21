@@ -35,7 +35,14 @@ function EventCard({
   location,
   category,
   description,
+  onDeleteEvent,
 }){
+  function handleDelete() {
+    if (window.confirm(`Delete "${title}"?`)) {
+      onDeleteEvent(id);
+    }
+  }
+
   return (
     <article className="event-card">
       <p className="event-category">
@@ -59,6 +66,9 @@ function EventCard({
       <Link className="details-button" to={`/events/${id}`}>
         View Details
       </Link>
+      <button type="button" onClick={handleDelete}>
+        Delete Event
+      </button>
 
     </article>
   );

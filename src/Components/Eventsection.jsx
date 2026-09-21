@@ -294,6 +294,7 @@ function EventSection({
               time={event.time}
               location={event.location}
               description={event.description}
+              onDeleteEvent={onDeleteEvent}
             />
           );
         })}

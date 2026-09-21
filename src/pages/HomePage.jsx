@@ -2,7 +2,7 @@ import EventForm from "../Components/EventForm";
 import EventSection from "../Components/Eventsection";
 import Hero from "../Components/Hero";
 
-function Homepage({ events, onAddEvent }) {
+function Homepage({ events, onAddEvent, onDeleteEvent }) {
     return (
         <div>
             <Hero
@@ -10,7 +10,10 @@ function Homepage({ events, onAddEvent }) {
               description="Find workshops, sports activities, club meetings, and opportunities to connect with other students."
             />
             <EventForm onAddEvent={onAddEvent} />
-            <EventSection events={events} />
+                        <EventSection
+                            events={events}
+                            onDeleteEvent={onDeleteEvent}
+                        />
         </div>
     );
 }
