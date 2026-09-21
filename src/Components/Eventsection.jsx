@@ -264,7 +264,10 @@
 
 import EventCard from "./EventCard";
 
-function EventSection({ events }) {
+function EventSection({ 
+  events,
+  onDeleteEvent
+ }) {
   return (
     <section id="events" className="event-section">
       <div className="section-heading">
