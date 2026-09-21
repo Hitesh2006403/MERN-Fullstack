@@ -31,9 +31,15 @@ body {
 }
 
 .app {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
   background: var(--paper);
+}
+
+.app-content {
+  flex: 1;
 }
 
 .Navbar {
@@ -301,6 +307,7 @@ body {
   }
 }
 .footer {
+  flex-shrink: 0;
   padding: 20px clamp(20px, 6vw, 102px);
   color: var(--paper-bright);
   background: var(--ink);
@@ -440,4 +447,29 @@ body {
   .full-width {
     grid-column: auto;
   }
+}
+
+
+.event-details-page{
+  max-width:900px;
+  margin:auto;
+  padding:70px 8%;
+}
+.event-details-page h1{
+  color:#0f172a;
+}
+.details-box{
+  margin:25px 0;
+  padding: 20px;
+  border-radius:10px;
+  background-color: #eff6ff;
+}
+.details-button{
+  display:inline-block;
+  margin-top:16px;
+  padding:10px 14px;
+  border-radius:6px;
+  background-color: #2563eb;
+  color:white;
+  text-decoration: none;
 }

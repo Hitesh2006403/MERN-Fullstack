@@ -214,7 +214,7 @@
 // export default App;
 
 import { useState } from "react";
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/footer";
@@ -222,6 +222,7 @@ import HomePage from "./pages/HomePage";
 import EventsPage from "./pages/EventsPage";
 import EventDetailsPage from "./pages/EventDetailsPage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 import { initialEvents } from "./Data/Event";
 
@@ -232,17 +233,27 @@ function App() {
     setEvents([...events, newEvent]);
   }
 
+  function handleDeleteEvent(eventId) {
+    const updatedEvents = events.filter(function (event) {
+      return event.id !== eventId;
+    });
+
+    setEvents(updatedEvents);
+  }
+
   return (
-    <div>
+    <div className="app">
       <Navbar />
 
-      <Routes>
+      <main className="app-content">
+        <Routes>
         <Route
           path="/"
           element={
             <HomePage
               events={events}
               onAddEvent={handleAddEvent}
+              onDeleteEvent={handleDeleteEvent}
             />
           }
         />
@@ -250,14 +261,19 @@ function App() {
         <Route
           path="/events"
           element={
-            <EventsPage events={events} />
+            <EventsPage
+              events={events}
+              onDeleteEvent={handleDeleteEvent}
+            />
           }
         />
 
         <Route
           path="/events/:eventId"
           element={
-            <EventDetailsPage events={events} />
+            <EventDetailsPage
+              events={events}
+            />
           }
         />
 
@@ -265,7 +281,13 @@ function App() {
           path="/about"
           element={<AboutPage />}
         />
-      </Routes>
+
+        <Route
+          path="/contact"
+          element={<ContactPage />}
+        />
+        </Routes>
+      </main>
 
       <Footer />
     </div>
