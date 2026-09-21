@@ -212,14 +212,17 @@
 // }
 
 // export default App;
+
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/footer";
-import Homepage from "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 import EventsPage from "./pages/EventsPage";
+import EventDetailsPage from "./pages/EventDetailsPage";
 import AboutPage from "./pages/AboutPage";
+
 import { initialEvents } from "./Data/Event";
 
 function App() {
@@ -237,13 +240,31 @@ function App() {
         <Route
           path="/"
           element={
-            <Homepage events={events} onAddEvent={handleAddEvent} />
+            <HomePage
+              events={events}
+              onAddEvent={handleAddEvent}
+            />
           }
         />
 
-        <Route path="/events" element={<EventsPage events={events} />} />
+        <Route
+          path="/events"
+          element={
+            <EventsPage events={events} />
+          }
+        />
 
-        <Route path="/about" element={<AboutPage />} />
+        <Route
+          path="/events/:eventId"
+          element={
+            <EventDetailsPage events={events} />
+          }
+        />
+
+        <Route
+          path="/about"
+          element={<AboutPage />}
+        />
       </Routes>
 
       <Footer />

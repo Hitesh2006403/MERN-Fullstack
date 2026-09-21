@@ -56,9 +56,8 @@ function EventCard({
           <strong>Location:</strong>{location}
         </p>
       </div>
-      <Link className="details-button"
-            to={'/events/${id}'}>
-      View Details
+      <Link className="details-button" to={`/events/${id}`}>
+        View Details
       </Link>
 
     </article>

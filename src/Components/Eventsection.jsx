@@ -266,7 +266,7 @@ import EventCard from "./EventCard";
 
 function EventSection({ events }) {
   return (
-    <section id="events" className="events-section">
+    <section id="events" className="event-section">
       <div className="section-heading">
         <div>
           <p className="section-label">
